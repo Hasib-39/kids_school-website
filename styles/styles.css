@@ -88,7 +88,6 @@ body{
 .burger-btn{
     display: none;
 }
-
 /* Banner Styles */
 .banner{
     padding: 0px 140px;
@@ -116,14 +115,94 @@ body{
     width: 40%;
 }
 
+/* Curriculum styles */
+.curriculum{
+    background-image: url('../assets/bg.png');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.curriculum-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.curriculum-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30rem;
+    background-color: white;
+    border-radius: 20px;
+    padding: 0px 40px;
+    box-shadow:  0 0 28px 0.94px rgba(0, 0, 0, 0.02);
+    /* border: 2px solid orange; */
+}
+.blue-card{
+    background-image: linear-gradient(to bottom, #def5ff, #ffffff 30%);
+    border: 1px solid #def5ff;
+}
+.orange-card{
+    background-image: linear-gradient(to bottom, #fff4dc, #ffffff 30%);
+    border: 1px solid #fff4dc;
+}
+.purple-card{
+    background-image: linear-gradient(to bottom, #f2e8ff, #ffffff 30%);
+    border: 1px solid #f2e8ff;
+}
+.curriculum-card-btn{
+    background-color: transparent;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.curriculum-card-title{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.curriculum-card-description{
+    font-size: 1rem;
+    color: #808080;
+}
+.curriculum-nav-btn{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.curriculum-nav-btn  img{
+    width: 60%;
+    height: 60%;
+    filter: invert(100%);
+}
+/* Smaller Device Styles */
 @media screen and (max-width: 576px) and (min-width: 320px){
     *{
         padding: 0px;
         margin: 0px;
     }
+    .section-padding{
+        padding: 20px 17px;
+        margin: 0px;
+    }
+    .section-title{
+        font-size: 1.7rem;
+        font-weight: bold;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+    }
     .nav-links,
     .nav-title,
-    .nav-btn{
+    .nav-btn,
+    .curriculum-nav-btns{
         display: none;
     }
     /* nav styles */
@@ -145,7 +224,10 @@ body{
         margin: 0px;
         width: 100%;
     }
-
+    .main{
+        padding: 12px;
+        margin: 0px;
+    }
     /* banner styles */
     .banner{
         flex-direction: column-reverse;
@@ -174,5 +256,15 @@ body{
         width: 100%;
         object-fit: cover;
     }
-}
 
+    /* curriculum styles */
+    .curriculum{
+        margin-top: 40px;
+        gap: 20px;
+    }
+    .curriculum-cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 14px;
+    }
+}
