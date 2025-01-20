@@ -6,6 +6,10 @@
     font-weight: <weight>;
     font-style: normal;
   } */
+   *{
+    padding: 0px;
+    margin: 0px;
+   }
 /* Shared Styles */
 .display-flex{
     display: flex;
@@ -61,6 +65,10 @@ body{
     font-family: 'Quicksand', sans-serif;
 }
 /* Nav styles */
+.logo-container{
+    display: flex;
+    align-items: center;
+}
 .navbar{
     justify-content: space-between;
     padding: 20px 140px;
@@ -181,6 +189,20 @@ body{
     width: 60%;
     height: 60%;
     filter: invert(100%);
+}
+
+/* Footer Styles */
+.footer{
+    background-color: #01ACFD;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 150px 190px;
+}
+.footer div{
+    border: 2px solid black;
 }
 /* Smaller Device Styles */
 @media screen and (max-width: 576px) and (min-width: 320px){
