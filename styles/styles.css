@@ -85,4 +85,38 @@ body{
     font-size: 1.25rem;
     font-weight: 500;
 }
+.burger-btn{
+    display: none;
+}
+
+@media screen and (max-width: 576px) and (min-width: 320px){
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    .nav-links,
+    .nav-title,
+    .nav-btn{
+        display: none;
+    }
+    /* nav styles */
+    .header{
+        border: 2px solid orange;
+        margin: 0px;
+        padding: 10px;
+        max-width: 576px;
+    }
+    .burger-btn{
+        display: block;
+        height: 30px;
+        width: 30px;
+        border: none;
+        background-color: transparent;
+    }
+    .navbar{
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+}
 
