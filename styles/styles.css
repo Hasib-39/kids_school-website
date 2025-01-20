@@ -201,8 +201,60 @@ body{
     gap: 10px;
     padding: 150px 190px;
 }
-.footer div{
-    border: 2px solid black;
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+.footer-title{
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    height: 80px;
+    line-height: 0.9;
+    justify-content: center;
+}
+.footer-description{
+    font-size: 1.25rem;
+    margin: 0px;
+    padding: 0px;
+    max-width: 400px;
+}
+
+
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+    padding-left: 120px;
+}
+
+.footer-nav-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+.footer-nav-links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-nav-link{
+    font-size: 1.25rem;
+    list-style: none;
+}
+.footer-icons{
+    display: flex;
+    gap: 10px;
+}
+.footer-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
 }
 /* Smaller Device Styles */
 @media screen and (max-width: 576px) and (min-width: 320px){
