@@ -145,5 +145,34 @@ body{
         margin: 0px;
         width: 100%;
     }
+
+    /* banner styles */
+    .banner{
+        flex-direction: column-reverse;
+        padding: 0px;
+        object-fit: cover;
+        margin: 0px 17px;
+        gap: 20px;
+    }
+    .banner-content{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .banner-title{
+        font-size: 2rem;
+    }
+    .banner-description{
+        font-size: 0.9rem;
+    }
+    .banner-img{
+        width: 100%;
+    }
+    .img-fluid{
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
