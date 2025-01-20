@@ -89,6 +89,33 @@ body{
     display: none;
 }
 
+/* Banner Styles */
+.banner{
+    padding: 0px 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 60%;
+}
+.banner-title{
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+}
+.banner-description{
+    font-size: 1.25rem;
+    margin: 0px;
+}
+.banner-img{
+    width: 40%;
+}
+
 @media screen and (max-width: 576px) and (min-width: 320px){
     *{
         padding: 0px;
