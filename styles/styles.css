@@ -390,7 +390,8 @@ body{
         margin: 0px;
     }
     .section-padding{
-        padding: 20px 17px;
+        padding: 60px 17px;
+        padding-bottom: 20px;
         margin: 0px;
     }
     .section-title{
@@ -460,6 +461,9 @@ body{
     }
 
     /* curriculum styles */
+    .curriculum-title{
+        padding-bottom: 40px;
+    }
     .curriculum{
         margin-top: 40px;
         gap: 20px;
