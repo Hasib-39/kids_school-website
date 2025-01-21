@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 /* .quicksand-<uniquifier> {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
@@ -13,6 +13,9 @@
 /* Shared Styles */
 .display-flex{
     display: flex;
+}
+.display-none{
+    display: none;
 }
 .text-primary{
     color: orange;
@@ -98,7 +101,7 @@ body{
 }
 /* Banner Styles */
 .banner{
-    padding: 0px 140px;
+    padding: 0px 9rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -118,9 +121,6 @@ body{
 .banner-description{
     font-size: 1.25rem;
     margin: 0px;
-}
-.banner-img{
-    width: 40%;
 }
 
 /* Curriculum styles */
@@ -144,6 +144,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 24px;
     height: 30rem;
     background-color: white;
     border-radius: 20px;
@@ -190,6 +191,123 @@ body{
     height: 60%;
     filter: invert(100%);
 }
+/* Stories Styles */
+.stories{
+    background-image: url('../assets/bg.png'), linear-gradient(to top, rgba(254, 199, 111, 0.5), #FFFFFF 90%);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding-bottom: 60px;
+    /* padding-top: 60px; */
+}
+.story-title{
+    margin: 40px 0px;
+}
+.story-cards-container{
+    display: flex;
+    justify-content:space-between;
+    margin: 0px auto;
+    gap: 20px;
+    height: 37.5rem;
+    width: 82%;
+}
+
+#story-card-1{
+    width: 44rem;
+    background-color: white;
+    border-radius: 0px 0px 1rem 1rem;
+}
+
+
+#story-card-1 img{
+    width: 100%;
+    height: 60%;
+    border-radius: 1rem 1rem 0px 0px;
+}
+.story-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.story-card{
+    width: 20rem;
+    height: 18rem;
+    background-color: white;
+    border-radius: 1rem 1rem 1rem 1rem;
+    position: relative;
+}
+.story-card img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0px 0px;
+}
+.card-1-content{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    /* padding-top: 4rem; */
+}
+
+.card-1-content h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-1-content p{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+    width: 90%;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666666;
+}
+
+.story-card-content{
+    position: relative;
+}
+.story-card-content h4{
+    padding: 2rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-top: 3rem;
+}
+
+.story-date{
+    width: 11rem;
+    height: 3.2rem;
+    background-color: #FFC76F;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    left: 2.5rem;
+    top: -1.5rem;
+}
+
+.capsule-green{
+    background-color: #95B226;
+}
+.capsule-sky{
+    background-color: #3CD8E8;
+}
+
+.capsule-blue{
+    background-color: #5D58F0;
+}
+
+
 
 /* Footer Styles */
 .footer{
@@ -199,7 +317,7 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    padding: 150px 190px;
+    padding: 9.4rem 12rem;
 }
 
 .logo-container{
@@ -257,7 +375,7 @@ body{
     border-radius: 4px;
 }
 /* Smaller Device Styles */
-@media screen and (max-width: 576px) and (min-width: 320px){
+@media screen and (max-width: 576px){
     *{
         padding: 0px;
         margin: 0px;
@@ -276,7 +394,8 @@ body{
     .nav-links,
     .nav-title,
     .nav-btn,
-    .curriculum-nav-btns{
+    .curriculum-nav-btns,
+    #story-card-1{
         display: none;
     }
     /* nav styles */
@@ -341,6 +460,91 @@ body{
         grid-template-columns: repeat(1, 1fr);
         gap: 14px;
     }
+    .main{
+        padding: 0px;
+        margin: 0px;
+    }
+    /* Stories styles */
+    .display-block{
+        display: block;
+    }
+    .stories{
+        gap: 60px;
+        padding: 60px 0px;
+        height: 1000px;
+    }
+    .story-cards-container{
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .story-cards{
+        height: 50rem;
+        width: 90%;
+        text-align: center;
+        /* border: 2px solid orange; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0px;
+        gap: 15px;
+        padding: 0px;
+    }
+    .story-card{
+        width: 100%;
+        height: 15rem;
+        background-color: white;
+        border-radius: 1rem 1rem 1rem 1rem;
+        text-align: left;
+        position: relative;
+    }
+    .story-card img{
+        width: 100%;
+        height: 60%;
+        object-fit: cover;
+        border-radius: 1rem 1rem 0px 0px;
+    }
+    
+    .story-card-content{
+        position: relative;
+    }
+    .story-card-content h4{
+        padding: 1.5rem;
+        line-height: 1.5;
+        font-size: 0.7rem;
+        font-weight: bold;
+        padding-top: 22px;
+    }
+    
+    .story-date{
+        width: 104px;
+        height: 23px;
+        background-color: #FFC76F;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 9px;
+        font-weight: 500;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        position: absolute;
+        left: 2rem;
+        top: -1rem;
+    }
+
+    .capsule-green{
+        background-color: #95B226;
+    }
+    .capsule-sky{
+        background-color: #3CD8E8;
+    }
+    
+    .capsule-blue{
+        background-color: #5D58F0;
+    }
+
     /* Footer styles */
     .footer{
         background-color: #01ACFD;
